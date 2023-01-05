@@ -4,6 +4,7 @@ const dotenv =require('dotenv')
 const pinRoute = require('./routes/pins')
 const userRoute = require('./routes/users')
 const app = express()
+const path = require('path')
 
 dotenv.config()
 
@@ -23,6 +24,7 @@ mongoose
 
 app.use("/api/users", userRoute);
 app.use("/api/pins", pinRoute);
+
 
 
 
