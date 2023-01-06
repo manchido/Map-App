@@ -30,7 +30,7 @@ function App() {
   };
 
   const handleAddClick = (e) => {
-    const [longitude, latitude] = e.lngLat;
+    const [latitude, longitude] = e.lngLat;
     setNewPlace({
       lat: latitude,
       long: longitude,
@@ -79,8 +79,8 @@ function App() {
       <ReactMapGL
         {...viewport}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX}
-        width={100}
-        height={100}
+        width="100%"
+        height="100%"
         transitionDuration="200"
         mapStyle="mapbox://styles/chidoziemelvin/clcgc3vj1000p14s1zuk51fye"
         onViewportChange={(viewport) => setViewport(viewport)}
