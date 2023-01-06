@@ -86,7 +86,7 @@ function App() {
         onViewportChange={(viewport) => setViewport(viewport)}
         onDblClick={currentUsername && handleAddClick}
       >
-        {pins.map((p) => (
+        {Object.keys(pins).map((p) => (
           <>
             <Marker
               latitude={p.lat}
